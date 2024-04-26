@@ -11,7 +11,7 @@ export default function Home() {
   const [roomId, setroomId] = useState("");
 
   var socket: any;
-  socket = io("https://talkie-test.vercel.app:3000");
+  socket = io("https://talkie-test.vercel.app");
 
   const handleJoin = () => {
     if (userName !== "" && roomId !== "") {
